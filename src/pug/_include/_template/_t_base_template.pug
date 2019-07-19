@@ -1,0 +1,17 @@
+doctype html
+include ../_settings/_s_variables
+include ../_settings/_s_meta
+include ../_settings/_s_mixin
+
+block vars
+
+html(lang="ja" class= "is-" + KEY)
+	head
+		include ../_settings/_s_head
+		block library
+	body
+
+		main#l-contentsTop
+
+			.l-contentsBody
+				block contents
