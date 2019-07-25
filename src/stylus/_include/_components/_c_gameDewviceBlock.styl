@@ -1,0 +1,236 @@
+
+.c-gameDewviceBlock01
+	
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 100%
+	overflow hidden
+
+	.deviceBlock
+		position absolute
+		top 50%
+		left 50%
+		width 80%
+		max-width 1100px
+		height 580px
+
+		background-color #aaa
+
+		border-radius 15px 15px 100px 15px
+		transform translate3d(-50%,-50%,0)
+		box-sizing border-box
+
+		+MQ_SP(1100px)
+			max-width 550px
+			width calc(100% - 20px)
+			transform translate3d(-50%,calc(-50% + 20px),0)
+
+		&:before, &:after
+			content ""
+			display block
+			position absolute
+		
+		&:before
+			top 0
+			left 5%
+			width 90%
+			padding-top 2.8%
+			border-right 3px solid #aaa
+			border-left 3px solid #aaa
+			z-index 1
+			+MQ_SP(1100px)
+				border-right 0.2vw solid #aaa
+				border-left 0.2vw solid #aaa
+		
+		&:after
+			top 5%
+			left 0
+			width 100%
+			padding-top 0.3%
+			background-color #aaa
+
+	.deviceWrapper
+		position absolute
+		top 50%
+		left 50%
+		width 98.8%
+		height 97.5%
+		background-color #dfdfdf
+		border-radius 15px 15px 100px 15px
+		
+		box-sizing border-box
+		transform translate3d(-50%,-50%,0)
+
+
+	.gamePlayBlock
+		position absolute
+		top 50%
+		left 50%
+		width 53.506%
+		padding-top 42.436%
+		background-color #ccc
+		border-radius 5%
+		transform translate3d(-50%,-50%,0)
+
+		.playLWrapper
+			position absolute
+			top 50%
+			left 50%
+			width 98%
+			padding-top 77.5%
+			background-color #000
+			border-radius 4%
+			transform translate3d(-50%,-50%,0)
+			overflow hidden
+
+		.playMWrapper
+			position absolute
+			top 50%
+			left 50%
+			width 86.2068966%
+			padding-top 65.518%
+			transform translate3d(-50%,-52%,0)
+
+		#mycanvas
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			border-radius 1%
+		
+
+	.controlBlock
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+
+		.leftBlock, .rightBlock
+			position absolute
+			top 0
+			width 23%
+			height 100%
+
+		.leftBlock
+			left 0
+
+		.rightBlock
+			right 0
+		
+		.plusBtn
+			position absolute
+			top 20%
+			left 15%
+			width 75%
+			padding-top 75%
+
+			&.is-upKey
+				.btn
+					background-color #777
+			&.is-rightKey
+				.btn
+					background-color #999
+			&.is-downKey
+				.btn
+					background-color #777
+			&.is-leftKey
+				.btn
+					background-color #bbb
+			.btn
+				cursor pointer
+				position absolute
+				background-color #aaa
+				
+				&#is-upKey
+					top 0
+					left 50%
+					width 35%
+					height 50%
+					transform translate3d(-50%, 0, 0)
+				&#is-rightKey
+					top 50%
+					right 0
+					width 50%
+					height 35%
+					transform translate3d(0, -50%, 0)
+				&#is-downKey
+					bottom 0
+					left 50%
+					width 35%
+					height 50%
+					transform translate3d(-50%, 0, 0)
+				&#is-leftKey
+					top 50%
+					left 0
+					width 50%
+					height 35%
+					transform translate3d(0, -50%, 0)
+		
+		.startbtn
+			#is-startBtn, #is-selectBtn
+				cursor pointer
+				position absolute
+				left 37%
+				width 50%
+				padding-top 6%
+				background-color #aaa
+				border-radius 50px
+				transform rotate(15deg)
+
+				&.is-active
+					background-color #999
+
+			#is-startBtn
+				top 65%
+			
+			#is-selectBtn
+				top 72%
+
+		.commandBtn
+			#is-aBtn, #is-bBtn
+				cursor pointer
+				position absolute
+				width 35%
+				padding-top 35%
+				background-color #aaa
+				border-radius 100px
+				&.is-active
+					background-color #999
+			
+			#is-aBtn
+				top 25%
+				right 15%
+
+			#is-bBtn
+				top 38%
+				left 15%
+		
+
+		.speakerBlock
+			position absolute
+			width 60%
+			height 22%
+			left 20%
+			bottom 18%
+			.speaker
+				position absolute
+				left 0
+				width 100%
+				padding-top 8%
+				background-color #aaa
+				border-radius 50px
+				transform rotate(-7deg)
+				&:nth-of-type(1)
+					top 0
+				&:nth-of-type(2)
+					top 20%
+				&:nth-of-type(3)
+					top 40%
+				&:nth-of-type(4)
+					top 60%
+				&:nth-of-type(5)
+					top 80%

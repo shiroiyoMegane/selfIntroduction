@@ -1,7 +1,5 @@
 
-
-module.exports = (tg, op, flag) => {
-	const uaSet = require('./ua.js');
+export default (tg, op, flag) => {
 
 	let timeoutId = 1, pageFlag;
 	let currentWidth = window.innerWidth;
@@ -44,14 +42,13 @@ module.exports = (tg, op, flag) => {
 			timeoutId = setTimeout( () => {
 				timeoutId = 0 ;
 				tg.windowScroll(op);
-			}, 300 ) ;
+			}, 50 ) ;
 		});
 
 		// scroll、resize制御
 		timeoutId = setTimeout( () => {
 			timeoutId = 0;
-		}, 100 ) ;
+		}, 50 ) ;
 	},false);
 
-	
 }

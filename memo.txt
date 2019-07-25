@@ -1,0 +1,25 @@
+
+■vue-cliのインストール
+npm install -g @vue/cli
+
+■プロジェクトの作成
+vue create pug-test --default
+cd pug-test
+
+■Pug関連のパッケージのインストール
+npm install --save-dev pug pug-plain-loader eslint-plugin-pug
+
+■stylus関連のパッケージのインストール
+npm install stylus stylus-loader
+
+■vue.config.js の設定
+ページ分けるときは設定、データの移動
+
+
+
+
+
+
+
+
+
