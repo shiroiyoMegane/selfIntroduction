@@ -10,10 +10,10 @@ export default (op) => {
 		}));
 	} catch(err) {}
 	/* リスナーを登録 */
-	document.addEventListener('touchend', function listener(e) {
-		/* do something */
-		e.preventDefault();
-	}, passiveSupported ? { passive: false } : false);
+	// document.addEventListener('touchend', function listener(e) {
+	// 	/* do something */
+	// 	e.preventDefault();
+	// }, passiveSupported ? { passive: false } : false);
 	document.addEventListener('touchmove', function listener(e) {
 		/* do something */
 		e.preventDefault();

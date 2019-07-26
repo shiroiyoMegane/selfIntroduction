@@ -14,7 +14,6 @@ import * as phina from "phina.js";
 window.option = {
 	SP_WIDTH: 768,
 	PC_WIDTH: 1200,
-	// UA: new uaSet().dvType(),
 	PAGE_FLAG: "html",
 	DEBUG_MODE: true,
 	GAME_FLAG: {
@@ -43,6 +42,6 @@ window.option = {
 const init = () => {
 	comSet(window.option);
 }
-export default (option) => {
+export default () => {
 	init();
 }
